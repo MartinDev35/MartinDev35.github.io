@@ -1,0 +1,82 @@
+body {
+  font-family: 'M PLUS 1 Code', sans-serif !important;
+}
+
+header,
+nav,
+section {
+  padding: 10px;
+}
+
+article {
+  margin: 80px 150px 80px 150px;
+}
+
+aside {
+  padding: 80px;
+}
+
+.fixed {
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
+.icono {
+  width: 45px;
+}
+
+.margenes {
+  margin: 30px;
+}
+
+#pAcerca {
+  margin-top: 40px;
+}
+
+.footer {
+  padding-bottom: 15px;
+}
+
+.contacto {
+  padding-left: 36px;
+}
+
+.tooltip-container {
+  position: relative;
+  display: flex;
+  place-content: center;
+}
+
+/* estilo del tooltip */
+p#tooltip-text {
+  display: none;
+  position: absolute;
+  top: -50px;
+  z-index: 1;
+  background: #7b807d;
+  padding: 8px;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 2px;
+  animation: fadeIn 0.6s;
+}
+
+/* estilo de la cuña del tooltip */
+p#tooltip-text:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border: 8px solid transparent;
+  border-top: 8px solid #7b807d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
